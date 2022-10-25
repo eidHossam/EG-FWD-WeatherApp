@@ -15,11 +15,17 @@ I wrote comments to make the code more readable.
 ## Instructions
 
 You need to write the zip code of the city you want to search for (US).
+
 Adding the feelings part is optional.
+
 The app will show you:
+
 1- City name
+
 2- Date of the search
+
 3- Temp
+
 4- Your feelings if you entered one.
 
 ## Made-BY : Hossam Eid
