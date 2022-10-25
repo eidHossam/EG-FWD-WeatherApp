@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/56a68b99d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Weather-App</title>
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="logo-container">
+            <img src="./pics/weather-icon-png-11102.png" alt="logo" width="40px" id="logo">GHO-Weather
+        </div>
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" name="zip" id="zip" 
+                placeholder="enter zip code here" autocomplete="off" autofocus>
+                <i class="fa-solid fa-magnifying-glass" id="search-logo"></i>
+            </div>
+        </div>
+    </nav>
+    <main>`
+        <div class="text-container">
+            <textarea name="feelings" id="feelings" cols="40" rows="15" placeholder="How are you feeling today?"></textarea>
+            <button type="submit" id="generate">Generate</button>
+        </div>
+        <div class="entrydiv">
+            <div class="city-container">
+                <h1 id="city">Cairo</h1>
+            </div>
+            <div id="entryHolder">
+                <div id="date" class="entry"> Date: 22/10/2022 </div>
+                <div id="temp" class="entry">
+                Temp: 23℃</div>
+                <div id="content" class="entry">
+                Content: Cold</div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        Copyright&copy; 22 Built by <a href="https://github.com/eidHossam" target="_blank" id="programmer">Hossam Eid</a>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>

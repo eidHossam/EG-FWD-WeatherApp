@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(2, 45, 80);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    border-bottom: 2px solid rgb(53, 87, 115);
+    font-size: 0.7em;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+    .logo-container{
+        font-size: 1.8em;
+    }
+
+    #logo{
+        width: 50px;
+    }
+
+    .nav-container{
+        /* justify-content:left; */
+        gap: 30%;
+        height: 100px;
+    }
+
+    .search-bar{   
+        width: 300px;
+    }
+
+    .entrydiv{
+        width: 500px !important;
+    }
+
+    #zip{
+    padding: 10px 20px !important;
+    }
+
+    #zip::placeholder{
+    font-size: large !important;
+    }
+
+    #feelings{
+        width: 500px !important;
+    }
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar{
+    background-color: rgb(53, 87, 115);
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+#zip{
+    background-color: rgb(53, 87, 115);
+    padding: 5px 10px;
+    width: 90%;
+    border: 0;
+    color: white;
+}
+
+#zip:focus{
+    outline: none;
+    text-align: left;
+}
+
+#zip::placeholder{
+    color: rgba(255, 255, 255, 0.596);
+    font-size: 1.2em;
+    text-align: center;
+    /* text-transform: capitalize; */
+}
+
+#zip:focus::placeholder {
+    color: transparent;
+}
+
+main{
+    background: linear-gradient(rgb(6, 52, 92), rgb(19, 88, 139));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+
+#feelings{
+    background-color: rgb(1, 27, 48);
+    border: 2px solid rgb(53, 87, 115);
+    border-radius: 10px;
+    width: 90vw;
+    color: white;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 40%);
+    padding:5px;
+}
+
+#feelings:focus {
+    outline: none;
+}
+
+#feelings::placeholder{
+    color: rgba(255, 255, 255, 0.781);
+    font-size: large;
+}
+
+#feelings:focus::placeholder {
+    color: transparent;
+}
+
+#generate{
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgb(1, 27, 48);
+    color: white;
+    transition: 0.2s all linear;
+}
+
+#generate:hover{
+    background-color: rgb(4, 51, 121);
+}
+
+.entrydiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 50vh;
+    width: 90vw;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+.city-container{
+    background-color: rgb(4, 51, 121);
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 40%);
+    border-radius: 0 0 6px 6px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+}
+
+#entryHolder{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;  
+    justify-content: center;  
+    align-items: center;
+    background-color: white;
+    border-radius:0 0 6px 6px;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 40%);
+    margin:0 50px;
+    margin-bottom: 50px;
+    height: 90%;
+    width: 100%;
+}
+
+.entry{
+    font-size: 2em;
+    width: auto;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    border-bottom:1px solid grey ;
+}
+
+
+.footer {
+    height: 10vh;
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#programmer {
+    color: aqua;
+    /* text-decoration: none; */
+    margin-left: 5px;
+}
